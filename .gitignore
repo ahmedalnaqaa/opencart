@@ -62,3 +62,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+# Editors generated files
+.project
+.settings
+.buildpath
+.idea
+nbproject
