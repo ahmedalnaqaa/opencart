@@ -4,6 +4,9 @@
   <p><?php echo $bank; ?></p>
   <p><?php echo $text_payment; ?></p>
 </div>
+<div class="alert alert-danger">
+    <?php echo $text_payment_message ?>
+</div>
 <div class="buttons">
   <div class="pull-right">
     <input type="button" value="<?php echo $button_confirm; ?>" id="button-confirm" class="btn btn-primary" data-loading-text="<?php echo $text_loading; ?>" />

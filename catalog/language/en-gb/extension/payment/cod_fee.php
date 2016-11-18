@@ -1,3 +1,3 @@
 <?php
 // Text
-$_['text_title'] = 'Cash On Delivery Fee';
+$_['text_title'] = 'COD Fees';

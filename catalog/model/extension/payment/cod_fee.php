@@ -2,6 +2,7 @@
 class ModelExtensionPaymentCODFee extends Model {
     public function getMethod($address, $total) {
         $this->load->language('extension/payment/cod_fee');
+        $currency_code = isset($this->session->data['currency']) ? $this->session->data['currency'] : $this->config->get('config_currency');
 
         $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone_to_geo_zone WHERE geo_zone_id = '" . (int)$this->config->get('cod_fee_geo_zone_id') . "' AND country_id = '" . (int)$address['country_id'] . "' AND (zone_id = '" . (int)$address['zone_id'] . "' OR zone_id = '0')");
 
@@ -22,9 +23,8 @@ class ModelExtensionPaymentCODFee extends Model {
         if ($status) {
             $method_data = array(
                 'code'       => 'cod_fee',
-                'title'      => $this->language->get('text_title'),
+                'title'      => $this->language->get('text_title')." - ".$this->config->get('cod_fee_amount')." ". $currency_code,
                 'terms'      => '',
-                'version'  => 209,
                 'sort_order' => $this->config->get('cod_fee_sort_order')
             );
         }
