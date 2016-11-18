@@ -35,7 +35,7 @@
                                 <div class="tab-pane active" id="tab-general">
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label"
-                                               for="input-status"><?php echo $tab_general; ?></label>
+                                               for="input-status"><?php echo $entry_status; ?></label>
                                         <div class="col-sm-10">
                                             <select name="xlogistics_status" id="input-status" class="form-control">
                                                 <?php if ($xlogistics_status) { ?>

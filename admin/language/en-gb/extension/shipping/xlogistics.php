@@ -13,7 +13,6 @@ $_['text_success']     = 'Success: You have modified X Logistics!';
 // Entry
 $_['entry_cost']       = 'Cost:';
 $_['entry_name']       = 'Method Name:';
-$_['entry_free']       = 'Shipping Free Limit<br /> [0 For No-Free]:';
 $_['entry_tax']        = 'Tax Class:';
 $_['entry_geo_zone']   = 'Available Zone:';
 $_['entry_status']     = 'Status:';
