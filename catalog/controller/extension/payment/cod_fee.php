@@ -1,5 +1,5 @@
 <?php
-class ControllerExtensionPaymentCodFee extends Controller {
+class ControllerExtensionPaymentCODFee extends Controller {
     public function index() {
         $data['button_confirm'] = $this->language->get('button_confirm');
 
